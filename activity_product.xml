@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan Barcode"
+        android:layout_marginTop="200dp"
+        android:id="@+id/btn_scan"
+        android:backgroundTint="@color/black_shade_1"
+        android:layout_marginLeft="130dp"
+        android:onClick="btn_scan"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product List"
+        android:id="@+id/btn_product"
+        android:backgroundTint="@color/black_shade_1"
+        android:layout_below="@+id/btn_scan"
+        android:onClick="btn_product"
+        android:layout_centerInParent="true"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:backgroundTint="@color/black_shade_1"
+        android:id="@+id/btn_about"
+        android:layout_below="@+id/btn_product"
+        android:layout_centerInParent="true"
+        android:onClick="btn_about"/>
+
+
+    <ImageView
+        android:id="@+id/idIVBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/barkod"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/idIcon"
+        android:layout_width="415dp"
+        android:layout_height="165dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/imagess"
+        android:layout_below="@+id/btn_about"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_about"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/barkod_number"
+        android:layout_below="@+id/imageView"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barkod_number"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="0dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/category"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category"
+        android:layout_marginTop="0dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/manufacturer"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manufacturer"
+        android:layout_marginTop="0dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/brand"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brand"
+        android:layout_marginTop="0dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/format"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/format"
+        android:layout_marginTop="0dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/description"/>
+
+
+
+
+</RelativeLayout>
